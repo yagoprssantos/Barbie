@@ -5,9 +5,11 @@ class World {
 
     private int totalKens = 0;
     private int totalBarbies = 0;
+    
     private int influenceKens = 0;
     private int influenceBarbies = 0;
     private Palette palette;
+
 
     public World(Palette palette) {
         this.palette = palette;
@@ -56,7 +58,7 @@ class World {
         }
     }
 
-      private String generateInfluenceBar(Color color, int influence, int maxBarSize) {
+    private String generateInfluenceBar(Color color, int influence, int maxBarSize) {
         StringBuilder bar = new StringBuilder();
         String ansiCode = String.format("\u001B[48;2;%d;%d;%dm  \u001B[0m", color.getRed(), color.getGreen(), color.getBlue());
         int scaledInfluence = (int) Math.round((double) influence / 100 * maxBarSize);

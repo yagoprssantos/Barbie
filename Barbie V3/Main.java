@@ -1,11 +1,5 @@
 import java.awt.Color;
 
-// 1.a Implementar os métodos getInflunce() nas classes
-// Ken e Barbie garantindo as alterações necessárias para 
-// que os valores de influencias de Ken e Barbie sejam 
-// distintas. Você tem liberdade de definir as regas para o
-// calculo do valor
-
 // 1.b Alterar as funções addKen() e addBarbie() para que sejam
 // instanciados os objetos e armazenados na classe World()
 // ao invés de um contador; Utiliza Lista para armazenar os objetos
